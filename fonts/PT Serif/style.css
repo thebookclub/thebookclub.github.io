@@ -1,0 +1,24 @@
+@font-face {
+   font-family: 'PT Serif';
+   font-style: normal;
+   font-weight: 700;
+   src: url('file:///E:/College/Website//fonts/PT Serif/700.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'PT Serif';
+   font-style: regular;
+   font-weight: 400;
+   src: url('file:///E:/College/Website//fonts/PT Serif/regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'PT Serif';
+   font-style: italic;
+   font-weight: 400;
+   src: url('file:///E:/College/Website//fonts/PT Serif/italic.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'PT Serif';
+   font-style: italic;
+   font-weight: 700;
+   src: url('file:///E:/College/Website//fonts/PT Serif/700italic.ttf') format('truetype');
+}
