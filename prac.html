@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practicals of AIT</title>
+    <link rel='stylesheet' href='prac.css'/>
+</head>
+<body>
+    <h1><center>Experiment 4: Audio, Video, Transition and Animation:-</center></h1>
+    <h1>I. The Transition + Transformation Property:</h1>
+    <h3>Hover over the image below, to see the transition and transformation effect.</h3>
+    <p>transition: width 1s, height 1s, transform 2s; transform: rotate(180deg);</p>
+    <div id="transition"><img src="transformation.png" style="height: 100px; width: 100px; margin-left: 20px;"></div>
+
+    <h1>II. The Animation Property:</h1>
+    <h3>The following box changes colour and direction due to CSS animation.</h3>
+    <p>animation: Box 5s linear 2s 7 alternate;</p>
+    <div id="animation" style="margin-left:20px;"></div>
+
+    <h1>III. Embedding Video:</h1>
+    <h3>The following video is embedded using HTML5's video tag.</h3>
+    <p>Within video tag, source src = "books.ogg"</p>
+    <video width="320" height="240" controls>
+        <source src="books.mp4" type="video/mp4">
+        <source src="books.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1>IV. Embedding Audio:</h1>
+    <h3>The following audio is embedded using HTML5's audio tag.</h3>
+    <p>Within audio tag, source src = "Heartbeat.ogg"</p>
+    <audio controls>
+        <source src="Heartbeat.ogg" type="audio/ogg">
+        <source src="Heartbeat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h1><center>Experiment 5: CSS3 Transformation Effects (2D and 3D Transformations):-</center></h1>
+    <h1>V. 2D Transformation:</h1>
+    <h3>1. The following image is translated when you hover on it.</h3>
+    <p>transition: 2s; transform: translate(50px,20px);</p>
+    <div id="translate">
+        <img src="transformation.png" style="height: 100px; width: 100px; margin-left: 20px;">
+    </div>
+    <h3>2. The following image is scaled when you hover on it.</h3>
+    <p>transition: 2s; transform: scale(2,3);</p>
+    <div id="scale">
+        <img src="transformation.png" style="height: 100px; width: 100px; margin-left: 20px;">
+    </div>
+    <h3>3. The following image is skewed when you hover on it.</h3>
+    <p>transition: 2s; transform: skew(20deg,10deg);</p>
+    <div id="skew">
+        <img src="transformation.png" style="height: 100px; width: 100px; margin-left: 20px;">
+    </div>
+    <h3>4. The following image is transformed when you hover on it using matrix() method</h3>
+    <p>transform: matrix(1, 0, 0.5, 1, 150, 20); transition: 2s;</p>
+    <div id="matrix">
+        <img src="transformation.png" style="height: 100px; width: 100px; margin-left: 20px;">
+    </div>
+
+    <h1>VI. 3D Transformation:</h1>
+    <a href="3D Transformations/prism.html">Prism</a><br>
+    <a href="3D Transformations/cardflip.html">Cardflip</a><br>
+    <a href="3D Transformations/carousel.html">Carousel</a><br>
+    <a href="3D Transformations/cube.html">Cube</a><br>
+    <a href="3D Transformations/perspective.html">Perspective</a><br>
+    <h3>1. rotateX():</h3>
+        <p>transform: rotateX(130deg);</p>
+        <div id="rotatex">This example shows rotateX function.</div>
+    <h3>2. rotateY():</h3>
+        <p>transform: rotateY(130deg);</p>
+        <div id="rotatey">This example shows rotateY function.</div>
+    <h3>3. rotateZ():</h3>
+        <p>transform: rotateZ(170deg);</p>
+        <div id="rotatez">This example shows rotateZ function.</div>
+
+    <h1><center>Experiment 6: CSS3 Aesthetics:-</center></h1>
+    <h1>VII. CSS3 Aesthetics:</h1>
+    <h2 id="shadow">1. Text Shadow with Blur Property</h2>
+    <p>text-shadow: 2px 2px 8px chocolate;</p>
+    <h2>2. Linear Gradient Transparency:</h2>
+        <p>background: linear-gradient(to top right, rgba(244, 127, 65, 0.7), rgba(140, 65, 244, 0.7));</p>
+        <div id="grad1"></div>
+        <br>
+        <p>background: linear-gradient(to bottom, #40405c 0%, #6f71aa 80%, #8a76ab 100%);</p>
+        <div id="grad2"></div>
+        <br>
+    <h2>3. Multiple Backgrounds:</h2>
+    <h3>The following div element has two background images: the papyrus background and the flower in the foreground.</h3>
+    <img src="flower.png" style="height: 200px; width: 900px; margin-left: 20px;">
+    <img src="papyrus.jpeg" style="height: 200px; width: 300px; margin-left: 20px;">
+    <p>background-image: url(flower.png), url(papyrus.jpeg);</p>
+    <div id="example1">
+        <p style="color: chocolate">Lorem Ipsum Dolor</p>
+        <p style="color: chocolate">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+        <p style="color: chocolate">Ut wisi enim ad minim veniam, quis nostrud exercitation</p>
+    </div>
+    <h2>4. Gradient Pattern:</h2>
+    <p>background: radial-gradient(#303258 15%, transparent 15%) 0px 0px,</p>
+        <div id="paper"></div><br>
+    <h2>5. Fonts:</h2>
+        <p>font-family: Quicksand; src: url(Quicksand-Italic.otf);</p>
+        <div id="font">This is Quicksand Font</div><br>
+        <p>font-family: Source Code Pro; src: url(SourceCodePro-Semibold.otf);</p>
+        <div id="font2">This is Source Code Pro Font</div><br>
+
+    <h1><center>Experiment 7: Form:-</center></h1>
+    <a href="form.html"><center>Click here to load contact form.</center></a>
+
+    <h1><center>Experiment 9: Google Mashup:-</center></h1>
+    <a href="googlemaps.html"><center>Click here to see a map of our college.</center></a>
+</body>
+</html>
